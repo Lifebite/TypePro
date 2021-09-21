@@ -1,0 +1,10 @@
+module = pathToModule
+
+type public function :: module.new(Label):table
+This constructor function creates a new dialogue session that can be used to store and organize multiple dialogue actions. Return type table.
+
+type public function :: session:Add(Index, Priority, ):void
+This method creates a new dialogue action that is stored in the called dialogue session. Return type void.
+
+type public function :: session:DoDialogue(Index):void
+This method calls the dialogue (found with index) and activates it.
